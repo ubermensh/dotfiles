@@ -1,0 +1,15 @@
+[user]
+	email = lemantar.flcl@gmail.com
+	name = geshtalt
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --graph --full-history --all --color         --pretty=format:\"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s\"
+	type = cat-file -t
+	dump = cat-file -p
+[push]
+	default = matching
+[pager]
+	show = vim -c '%sm/\\e.\\{-}m//g' -c 'set ft=diff' +1 -
