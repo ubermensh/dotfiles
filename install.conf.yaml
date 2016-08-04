@@ -13,3 +13,9 @@
         create: true
 
 
+- clean: ['~']
+
+- link:
+    ~/.zshrc: zshrc
+
+
