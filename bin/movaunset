@@ -1,7 +1,0 @@
-#!/bin/bash
-
-discover_session_bus_address unity >/dev/null 2>/dev/null
-
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
-
-echo "default (en, ru) set"

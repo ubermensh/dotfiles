@@ -1,8 +1,12 @@
 #!/bin/bash
+if [ $# -ne 1 ]; then
+	echo "$0: usage: set language code as argument (f.e. movaset by)" 
+    exit 1
+fi
+lang=$1
 
 discover_session_bus_address unity >/dev/null 2>/dev/null
 
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', '$lang'), ('xkb', 'us')]"
 
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'be'), ('xkb', 'us')]"
-
-echo "ZHIVE!"
+echo $lang
