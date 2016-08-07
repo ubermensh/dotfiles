@@ -1,0 +1,8 @@
+#!/bin/bash
+
+discover_session_bus_address unity >/dev/null 2>/dev/null
+
+
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'be'), ('xkb', 'us')]"
+
+echo "ZHIVE!"
