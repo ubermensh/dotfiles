@@ -9,4 +9,4 @@ discover_session_bus_address unity >/dev/null 2>/dev/null
 
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', '$lang'), ('xkb', 'us')]"
 
-echo $lang
+gsettings get org.gnome.desktop.input-sources sources
