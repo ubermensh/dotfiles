@@ -14,4 +14,4 @@
 [pager]
 	show = vim -c '%sm/\\e.\\{-}m//g' -c 'set ft=diff' +1 -
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /home/gesthalt/.gitignore_global
