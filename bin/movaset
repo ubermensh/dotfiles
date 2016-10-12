@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#this script sets the input source, given the language code as argument
+
 if [ $# -ne 1 ]; then
 	echo "$0: usage: set language code as argument (f.e. movaset by)" 
     exit 1
@@ -7,6 +10,12 @@ lang=$1
 
 discover_session_bus_address unity >/dev/null 2>/dev/null
 
+if [ "$lang" == "anthy" ]; then
+	gsettings set org.gnome.desktop.input-sources sources "[('ibus', 'anthy'), ('xkb', 'us')]"
+	echo "お目出度う! ! !" 
+	gsettings get org.gnome.desktop.input-sources sources
+	exit 1
+fi
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', '$lang'), ('xkb', 'us')]"
 
 gsettings get org.gnome.desktop.input-sources sources
