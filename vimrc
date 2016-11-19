@@ -27,3 +27,10 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
+
+" check one time after 4s of inactivity in normal mode
+set autoread                                                                                                                                                                                    
+au CursorHold * checktime 
+
+
+map <C-n> :NERDTreeToggle<CR>
