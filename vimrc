@@ -34,3 +34,7 @@ au CursorHold * checktime
 
 
 map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeFind<CR>
+vnoremap <C-c> "+y
+set splitright
+

@@ -119,5 +119,12 @@ export NVM_DIR="/home/gesthalt/.nvm"
 
 #MINE 
 set -o vi
+export VISUAL=vim
+export EDITOR="$VISUAL"
+#for mc
+alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
+
+EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 
 PATH="$HOME/bin:$PATH"

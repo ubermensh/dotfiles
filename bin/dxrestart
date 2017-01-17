@@ -5,6 +5,8 @@ docker rm -f $(docker ps -a -q)
 
 #front detached
 docker-compose -f /home/gesthalt/projects/ehr/dxScript/dxscript/docker-development.yml up -d app
+#front NOT detached
+#docker-compose -f /home/gesthalt/projects/ehr/dxScript/dxscript/docker-development.yml up app
 
 #middleware
 docker-compose -f /home/gesthalt/projects/ehr/dxScript/middleware/dxscript-middleware/docker-development.yml up api

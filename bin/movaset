@@ -10,7 +10,7 @@ lang=$1
 
 discover_session_bus_address unity >/dev/null 2>/dev/null
 
-if [ "$lang" == "anthy" ]; then
+if [ "$lang" == "ja" ]; then
 	gsettings set org.gnome.desktop.input-sources sources "[('ibus', 'anthy'), ('xkb', 'us')]"
 	echo "お目出度う! ! !" 
 	gsettings get org.gnome.desktop.input-sources sources

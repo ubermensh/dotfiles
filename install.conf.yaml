@@ -8,6 +8,7 @@
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.config: config
     ~/bin:
         path: bin/
         create: true
