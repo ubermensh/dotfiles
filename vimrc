@@ -38,3 +38,7 @@ map <C-m> :NERDTreeFind<CR>
 vnoremap <C-c> "+y
 set splitright
 
+"If you search for something containing uppercase characters, it will do a case sensitive search; if you search for something purely lowercase, it will do a case insensitive search. You can use \c and \C to override this:
+
+:set ignorecase
+:set smartcase

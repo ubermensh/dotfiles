@@ -89,8 +89,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-#
-#
+alias cls="clear"
+alias htop="htop -d 60"
+alias l="ls -lah"
+alias learn="learnyounode"
+alias at="apt-get"
+alias ipinternal="ip route get 8.8.8.8 | awk '{print $NF; exit}'"
+alias ipexternal="dig +short myip.opendns.com @resolver1.opendns.com"
+alias killdocker="docker rm -f $(docker ps -a -q)"
+
+
 # A shortcut function that simplifies usage of xclip.
 # - Accepts input from either stdin (pipe), or params.
 # ------------------------------------------------
@@ -139,3 +147,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 #for mc
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
+#####################################################from bashrc
+#
+#todo 
