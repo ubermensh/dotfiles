@@ -34,7 +34,7 @@ au CursorHold * checktime
 
 
 map <C-n> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeFind<CR>
+map <C-x> :NERDTreeFind<CR>
 vnoremap <C-c> "+y
 set splitright
 
@@ -42,3 +42,6 @@ set splitright
 
 :set ignorecase
 :set smartcase
+
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)<Paste>
